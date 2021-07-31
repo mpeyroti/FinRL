@@ -32,7 +32,7 @@ RESULTS_DIR = f"results"
 
 ## time_fmt = '%Y-%m-%d'
 START_DATE = "2009-01-01"
-END_DATE = "2021-01-01"
+END_DATE = "2021-08-01"
 
 START_TRADE_DATE = "2019-01-01"
 
