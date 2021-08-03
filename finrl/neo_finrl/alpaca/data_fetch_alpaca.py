@@ -23,7 +23,7 @@ def data_fetch(API_KEY, API_SECRET, APCA_API_BASE_URL,stock='AAPL'
         end_time=(date + pd.Timedelta('16:00:00')).isoformat()
         print(('Data before ') + end_time + ' is successfully fetched')
         barset = api._data_get_v2(APCA_API_BASE_URL, stock, time_interval, start=start_time,
-                                end=end_time, limit=500, api_version=api_version)
+                                end=end_time, limit=500)
         if if_first_time:
             dataset = barset.df
             if_first_time = False
