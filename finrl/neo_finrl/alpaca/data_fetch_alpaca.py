@@ -1,14 +1,16 @@
+from sys import api_version
 import alpaca_trade_api as tradeapi
 import pandas as pd
 
 def data_fetch(API_KEY, API_SECRET, APCA_API_BASE_URL,stock='AAPL'
                , start_date='2021-05-10',
                end_date='2021-05-10',time_interval='15Min'):
+    api_version = 'v2'
     api = tradeapi.REST(
         key_id=API_KEY, 
         secret_key=API_SECRET, 
         base_url=APCA_API_BASE_URL, 
-        api_version='v2'
+        api_version=api_version
     )
     NY = 'America/New_York'
     start_date = pd.Timestamp(start_date, tz=NY)
@@ -21,7 +23,7 @@ def data_fetch(API_KEY, API_SECRET, APCA_API_BASE_URL,stock='AAPL'
         end_time=(date + pd.Timedelta('16:00:00')).isoformat()
         print(('Data before ') + end_time + ' is successfully fetched')
         barset = api._data_get_v2(APCA_API_BASE_URL, stock, time_interval, start=start_time,
-                                end=end_time, limit=500)
+                                end=end_time, limit=500, api_version=api_version)
         if if_first_time:
             dataset = barset.df
             if_first_time = False
