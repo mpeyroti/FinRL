@@ -22,7 +22,7 @@ Feel free to report bugs via Github issues, join the mailing list: [AI4Finance](
 
 <br/>
 
-<a href="https://join.slack.com/t/ai4financeworkspace/shared_invite/zt-ry2nl18h-1NU5858evQhSdG4lFJ~zcA" target="\_blank">
+<a href="https://join.slack.com/t/ai4financeworkspace/shared_invite/zt-tosajd1i-F0An2~EJWY2qvKJQDe3nbQ" target="\_blank">
 	<div align="center">
 		<img src=figs/join_slack.png width="40%"/>
 	</div>
@@ -55,7 +55,7 @@ FinRL provides a unified DRL framework for various markets, SOTA DRL algorithms,
 
 # Prior Arts:
 
-We published [papers in FinTech](http://www.tensorlet.com/projects/ai-in-finance/) and now arrive at this project:
+We published [papers in FinTech](http://tensorlet.org/projects/ai-in-finance/) and now arrive at this project:
 
 + 4). [FinRL](https://arxiv.org/abs/2011.09607): A Deep Reinforcement Learning Library for Automated Stock Trading in Quantitative Finance, Deep RL Workshop, NeurIPS 2020.
 + 3). Deep Reinforcement Learning for Automated Stock Trading: An Ensemble Strategy, [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3690996) and [codes](https://github.com/AI4Finance-LLC/Deep-Reinforcement-Learning-for-Automated-Stock-Trading-Ensemble-Strategy-ICAIF-2020), ACM International Conference on AI in Finance, ICAIF 2020.
